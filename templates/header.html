@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://www.itdiffer.com"><img width="100px" src="{% static '/images/logo.png' %}"></a>
+        </div>
+        <div>
+         <!--这里之后将引入username的超链接-->
+            <ul class="nav navbar-nav" role="navigation">
+                <li><a herf="{% url 'blog:blog_title' %}">BLOG</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right"  style="margin-right: 10px">
+
+                    <li><a href="{% url 'account:user_login' %}">LOGIN</a></li>
+
+
+
+
+            </ul>
+        </div>
+    </nav>
+</div>
